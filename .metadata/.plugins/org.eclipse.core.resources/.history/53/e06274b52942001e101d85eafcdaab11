@@ -1,0 +1,39 @@
+package Practice_Basics;
+
+public class MyClass {
+	
+	
+	public static void main(String args[]) {
+     NumberConverter n = new NumberConverter();
+    // String s1= n.i;
+        System.out.println(n.Convert(100));
+        
+    }
+}
+
+ class NumberConverter
+{
+    public  String Convert(int number)
+    {
+        String S1 = new Integer(number).toString();
+String s2= new String();
+       for(int i=0;i<S1.length();i++)
+       {
+    	 // char s3=S1.charAt(i);
+          if(S1.charAt(i) == '1' )
+          {
+        	  s2+= "One ";
+        	 // System.out.println(s2);
+              
+          }
+          else if(S1.charAt(i) == '2' )
+          { s2+= "Two "
+          }
+          }
+    	   
+       }
+   return s2;
+        
+    }
+
+}

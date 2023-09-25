@@ -1,0 +1,20 @@
+import java.io.FileInputStream;
+
+import org.apache.poi.xssf.usermodel.XSSFWorkbook;
+
+public class dataDriven {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		//Input stream as argument
+		
+		FileInputStream fis = new FileInputStream("C:\\Users\\anil1\\Documents");
+		
+		
+		XSSFWorkbook workbook = new XSSFWorkbook();
+		
+
+	}
+
+}

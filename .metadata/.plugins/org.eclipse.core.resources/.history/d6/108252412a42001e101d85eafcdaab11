@@ -1,0 +1,79 @@
+package Practice_Basics;
+
+public class MyClass {
+	
+	
+	public static void main(String args[]) {
+     NumberConverter n = new NumberConverter();
+    // String s1= n.i;
+        System.out.println(n.Convert(100));
+        
+    }
+}
+
+ class NumberConverter
+{
+    public  String Convert(int number)
+    {
+        String S1 = new Integer(number).toString();
+String s2= new String();
+       for(int i=0;i<S1.length();i++)
+       {
+    	 // char s3=S1.charAt(i);
+          if(S1.charAt(i) == '1' )
+          {
+        	  s2+= "One ";
+        	 // System.out.println(s2);
+              
+          }
+          else if(S1.charAt(i) == '2' )
+          { 
+        	  s2+= "Two ";
+          }
+
+          else if(S1.charAt(i) == '3' )
+          { 
+        	  s2+= "Three ";
+          }
+
+          else if(S1.charAt(i) == '4' )
+          { 
+        	  s2+= "Four ";
+          }
+
+          else if(S1.charAt(i) == '5' )
+          { 
+        	  s2+= "Five ";
+          }
+
+          else if(S1.charAt(i) == '6' )
+          { 
+        	  s2+= "Six ";
+          }
+
+          else if(S1.charAt(i) == '7' )
+          { 
+        	  s2+= "Seven ";
+          }
+
+          else if(S1.charAt(i) == '8' )
+          { 
+        	  s2+= "Eight ";
+          }
+
+          else if(S1.charAt(i) == '9' )
+          { 
+        	  s2+= "Nine ";
+          } 
+          
+
+          else if(S1.charAt(i) == '0' )
+          { 
+        	  s2+= "Zeo ";
+          }
+       }
+   return s2;
+        
+    }
+
+}

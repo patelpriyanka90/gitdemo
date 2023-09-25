@@ -1,0 +1,22 @@
+package Practice_Basics;
+
+public class MyClass {
+	
+	
+	public static void main(String args[]) {
+        NumberConverter n = new NumberConverter();
+       // String s1= n.i;
+        System.out.println(n.Convert(100));
+        
+    }
+}
+
+class NumberConverter
+{
+    public String Convert(int number)
+    {
+       return new Integer(number).toString();
+        
+    }
+
+}
